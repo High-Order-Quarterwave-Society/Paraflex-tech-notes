@@ -97,6 +97,7 @@ Modern heavy duty high excursion subwoofer drivers can withstand some absurdly h
 The Peak Stop Limiter's time constants should both be set extremely short practically instantaneous and the compression ratio should bet set very high (infinity or "brick wall"). 
  
 **Our quest to make sense of it all**
+
 It must be said that driver manufacturers do not all use the same standards for power handling nor do they use the same terminology. This can create some confusion or misinterpretation at times. Comparing the power handling ratings of drivers from two or more different brands is "Apples to Oranges" (meaning not precisely or scientifically comparable due to different standards).  
 
 Good news is that we can gain a foothold in our quest to make sense of this by first having a basic understanding of what the AES 1984 Power Handling standard is all about so that we establish a reference to work from, and then from there we can bring everything into focus. This AES standard is determined by the driver surviving a 2 hour trial in free-air being fed a Pink Noise signal which is filtered to cover a decade of spectrum (so that could be from 20hz to 200hz for example) Pink Noise is dynamic and has a Crest Factor of 6db which is a vitally important detail to remember (6db is a power multiplication factor of 4). 
@@ -106,6 +107,7 @@ So this means that the actual conservative average component of this power handl
 You can look up the procedure that these other brands rely upon and you will find that well respected names like Eminence and B&C are also using filtered Pink-Noise over a few hours which explains why the ratings aren't too far removed from one another. Some brands prefer to call their power handling standard "RMS", others may call it  "Nominal", or they may have named it "Continuous" but all of these are roughly equivalent -ish to the AES standard.
 
 **Musical program power ratings**
+
  Then there are "Program" or "Musical Program" power ratings which are basically AES+3dB (which is the same as double the AES rating since 3dB is a power multiplication factor of 2. We don't even need to concern ourselves with "Peak" ratings but they are derived from adding yet another +3dB).
  
 There are other standards and terms out there but the ones we have mentioned here are those which you will encounter with modern PA drivers most often. So now that we have all of that covered it has laid the foundation for us to delve into your DSP's RMS Limiter settings.
