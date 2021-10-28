@@ -20,10 +20,10 @@ The cabinet used here is a custom Paraflex C-2E 1x21 without the angle-brace upd
 ![paraflex-preconditioning-graph-02](https://user-images.githubusercontent.com/728661/139222982-560d5f56-6fd1-4fb8-8f77-442e2e5de6f3.jpg)
 ![paraflex-preconditioning-graph-03](https://user-images.githubusercontent.com/728661/139223097-507c5943-83c2-46ec-9d7d-569f0ca6a748.jpg)
 
---
+
 
 ### NOTES
---
+---
 
 What we have found out about compliance and our Paraflex cabinets has me taking this aspect into consideration more than I have in a long time.
 
