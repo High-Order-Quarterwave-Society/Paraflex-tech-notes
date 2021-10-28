@@ -82,4 +82,71 @@ If your DJ is blasting the mixer's output level meters into the red then you nee
 
 <img src="https://user-images.githubusercontent.com/728661/139232240-adf0ac62-7d68-466c-b112-7b601cb29b41.jpg" height="250">
 
+###  LIMITERS AND HOW THEY CAN BE SET TO PROTECT A SUBWOOFER SYSTEM
+---
+ Last but not least limiters are an important topic and an essential feature if you want to do everything you can to protect your subwoofer system. 
+ I understand that some trusted manufacturers such as Danley and Powersoft offer a lot of guidance in this area so it is definitely worth checking out their tutorials, explanations & formulas. 
+ 
+ We will go over the most basic of basics here with a common 2 part limiter system consisting of both a Peak Stop Limiter and an RMS limiter, each having their own very specific function.The goal here is to control the average power levels while fully retaining & preserving the music's Crest Factor (dynamic nature), and the key to success is our settings.
+ 
+ If your DSP limiter system is separate from your amplifier (not integrated) then this procedure can either be calculated or if you prefer the manual approach it will require a trusty A/C voltmeter and a tone generator set to 50hz or 60hz. Disconnect your speakers from the amplifier for this, and instead connect your A/C voltmeter to the amplifier's output (the channel which we wish to set the limiter for) Amp's gain pots set to fully clockwise.
+
+The Peak Stop Limiter is much like the Clip Limiter feature which is included in many amplifiers, and it's purpose is simply to prevent your amplifier from clipping on peaks or if your amplifier is MASSIVELY overpowered for your driver the Peak Stop Limiter can be set up to protect your driver from mechanical damage. 
+
+Modern heavy duty high excursion subwoofer drivers can withstand some absurdly high peaks so adjusting your threshold to set your peak power output level to the driver's "Program" or "Music Program" rating is reasonable, or if your amplifier doesn't have that much voltage output available you could set the Peak Stop Limiter's threshold to limit output closer to the driver's AES rating (some brands use the terms "RMS" or "Nominal" which are close enough to AES for our purposes. 
+The Peak Stop Limiter's time constants should both be set extremely short practically instantaneous and the compression ratio should bet set very high (infinity or "brick wall"). 
+ 
+**Our quest to make sense of it all**
+It must be said that driver manufacturers do not all use the same standards for power handling nor do they use the same terminology. This can create some confusion or misinterpretation at times. Comparing the power handling ratings of drivers from two or more different brands is "Apples to Oranges" (meaning not precisely or scientifically comparable due to different standards).  
+
+Good news is that we can gain a foothold in our quest to make sense of this by first having a basic understanding of what the AES 1984 Power Handling standard is all about so that we establish a reference to work from, and then from there we can bring everything into focus. This AES standard is determined by the driver surviving a 2 hour trial in free-air being fed a Pink Noise signal which is filtered to cover a decade of spectrum (so that could be from 20hz to 200hz for example) Pink Noise is dynamic and has a Crest Factor of 6db which is a vitally important detail to remember (6db is a power multiplication factor of 4). 
+
+So this means that the actual conservative average component of this power handling is more along the lines of AES divided by 4  (again, remember this because we will be putting this information to work for us later). Now that we are familiar enough with how the AES power rating standard is defined the rest becomes easier because even though it is true that not all brands embrace this standard it is not a problem because the reputable ones which don't use AES will have their own alternative which comes close (off by no more than 30% it has been said, but usually less) and fortunately for us we don't need absolute precision to get this job done. 
+
+You can look up the procedure that these other brands rely upon and you will find that well respected names like Eminence and B&C are also using filtered Pink-Noise over a few hours which explains why the ratings aren't too far removed from one another. Some brands prefer to call their power handling standard "RMS", others may call it  "Nominal", or they may have named it "Continuous" but all of these are roughly equivalent -ish to the AES standard.
+
+**Musical program power ratings**
+ Then there are "Program" or "Musical Program" power ratings which are basically AES+3dB (which is the same as double the AES rating since 3dB is a power multiplication factor of 2. We don't even need to concern ourselves with "Peak" ratings but they are derived from adding yet another +3dB).
+ 
+There are other standards and terms out there but the ones we have mentioned here are those which you will encounter with modern PA drivers most often. So now that we have all of that covered it has laid the foundation for us to delve into your DSP's RMS Limiter settings.
+
+**RMS limiting**
+
+The RMS Limiter is something which we intend to set up to behave like an intentionally slow "leveler" or AGC circuit, and it's very long time constants are what makes it possible to retain our music's vital Crest Factor. In order to accomplish this you will need find your RMS limiter's Attack and Release settings and Ratio if available (these Time Constant settings are sometimes labeled with different names). 
+
+Set the Attack timing very long at 2000ms to 3000ms (2 to 3 seconds). 
+Then set your Release (or sometimes called "Decay") time at least 2x the attack time (or some prefer higher, as much as 4x to 6x).  
+The limiter's Ratio setting (if available) should be turned high to at least 6:1 up to 10:1 or more.  
+
+Keep in mind that we are creating a very slow limiter which intentionally does not respond to peaks,  and considering our AES (or AES equivalent) is determined with a Pink Noise signal that has a 6db Crest Factor (factor of 4) just imagine the component of the signal which remains if the dynamics were removed from the Pink Noise, this leaves us with a signal level approximating 1/4 (25%) of our AES (or equivalent) power rating, and that will be our most "safe" & bulletproof target option for our subwoofer system's RMS limiter. 
+
+**Amplifier voltage & average power handling**
+
+So for the last step in this limiter setting procedure we want to once again drive the system with our full strength signal and begin adjusting the limiter's Threshold setting while watching our A/C voltmeter until output hits our measured target voltage which correlates with 1/4 (25%) of the driver's AES (or equivalent) rating.
+Once achieved you should then stop the signal,  disconnect the volt meter, hook your speakers back up and proceed to play your favorite music at party volumes for a a few hours (or even play a gig) to determine if the driver's motors are becoming hot to the touch and if not that is great news because it means you can run the procedure again and this time adjust your RMS Limiter's Threshold setting until your measured amplifier output voltage correlates with 1/3rd (33%) of the driver's AES (or equivalent rating). 
+
+Again, once achieved stop the signal, disconnect the meter, reconnect speakers, and test with music again at war volume for at least a few hours to determine motor heat buildup and if your subwoofers are still running acceptably cool then that is fantastic because it means our next Threshold setting to try would be 1/2 (50%) of AES (or equivalent) So on and so forth.
+
+If the driver's motor ever feels uncomfortably hot to the touch then you are surely experiencing Thermal Power Compression losses at that point which is not ideal, and is a sign to back off on the average power levels. If the outside of the motor is hot then the inside of the motor is even hotter. If you would prefer to be extra nerdy about it you can always contact the manufacturer of the driver to ask about what they suggest for maximum operating temperature (as measured at the magnet structure or wherever they recommend) and then a Thermal Gun (Infrared Thermometer) can be used to check.
+
+The reason for the differing in averaged power handling (as a % of AES) from system to system (and situation to situation) revolves around many variables, some of which we already went over such as characteristics of music style and how it interacts with the cabinet design,  duration of show, and dissimilarity in ratings systems (some drivers will be rated more optimistically than others).  Even ambient temperature and humidity will have some influence.
+
+*NOTE: To calculate the voltage which correlates with your desired long term power limit you must first multiply that wattage figure by the nominal ohm impedance load and then find the square root of that product.  If you prefer a calculator [here is a link](www.calculator.net/ohms-law-calculator.html).*
+
+---
+As an example: 117v is 1700w into 8 ohms nominal and 82v is about 850 watts into 8 ohms nominal , while half of 117v or 58.5v is 425 watts into 8 ohms nominal. **Notice that half the voltage works out to 1/4 (25%) of the power in watts.** Mr. Mark Tomlin of Linea Research (and also happens to be our HOQS Regional Support Director for The UK) suggests the Linea Research method for determining your RMS limiter attack time. He noted:  *"100/HPF frequency.  So if you have a high pass at 45hz it would be 100/45=2.22. Then set the release at 2 or 3 times the attack depending how much protection you want"*.
+
+*NOTE: If instead of milliseconds your limiter's time constants go by dB/s then DON'T PANIC because converting is just a simple matter of dividing 3250 by the time in ms. Thus 10ms attack time ~= 325dB/s. 4ms attack time ~= 800dB/s*
+
+### References:
+[From Powersoft](https://www.facebook.com/groups/bassaz/posts/4850312538317168/)
+
+[From Linea Research](https://www.facebook.com/groups/bassaz/posts/4850356624979426/)
+
+[From Bennett Prescott of B&CAES](https://bennettprescott.com/downloads/AES_2018_PD07.pdf)
+
+[FRom Bennett Prescott of B&C - speaker fundamentals](https://bennettprescott.com/.../LoudspeakerFundamentals.pdf)
+
+[From Crown](https://www.crownaudio.com/.../site.../it-hd-limiter-wizard)
+
 
