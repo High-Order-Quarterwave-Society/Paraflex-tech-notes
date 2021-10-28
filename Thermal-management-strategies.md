@@ -145,7 +145,7 @@ As an example: 117v is 1700w into 8 ohms nominal and 82v is about 850 watts into
 
 [From Linea Research](https://www.facebook.com/groups/bassaz/posts/4850356624979426/)
 
-[From Bennett Prescott of B&CAES](https://bennettprescott.com/downloads/AES_2018_PD07.pdf)
+[From Bennett Prescott of B&C AES papers](https://bennettprescott.com/downloads/AES_2018_PD07.pdf)
 
 [FRom Bennett Prescott of B&C - speaker fundamentals](https://bennettprescott.com/.../LoudspeakerFundamentals.pdf)
 
