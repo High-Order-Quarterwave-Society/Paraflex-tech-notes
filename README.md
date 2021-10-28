@@ -1,4 +1,4 @@
-# Paraflex-tech-notes
+# Paraflex related tech notes
 *Various informative, technical & explanatory Paraflex related*
 
 Including, data, tutorials, development etc in many different forms
